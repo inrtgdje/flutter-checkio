@@ -13,6 +13,7 @@ class HabitsBloc extends Bloc<HabitsEvent, HabitsState> {
     on<HabitUpdate>(_mapHabitUpdateToState);
   }
 
+  @override
   void _mapHabitsLoadToState(
       HabitsLoad event, Emitter<HabitsState> emit) async {
     try {
